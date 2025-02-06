@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./yes.css">
+  <head>
+    <link rel="stylesheet" href="./yes.css" />
+    <script
+      src="https://kit.fontawesome.com/a351bbb09d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="music-player">
+        <nav>
+          <div class="circle">
+            <i class="fa-solid fa-angle-left"></i>
+          </div>
+          <div class="circle">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </nav>
+        <div class="flip-card" onclick="flipCard(this)">
+          <div class="flip-inner">
+            <div class="flip-front">
+              <img src="andi.jpg" />
+            </div>
+            <div class="flip-back">
+              <p>
+                Happy Valentine's Day, my love! Even tho we met online, you make
+                me happier, my heart fuller, and my days sweeter. I’m so
+                grateful to have you. Sorry eto lang nakayanan since ayaw mo
+                ibigay address nyo so I have no choce hahaha. I love you!
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <img src="andi.jpg" class="song-img" /> -->
+        <h2 class="margin">As I said baby, this is my favorite song and I dedicated this song to
+            you</h1>
+        <p class="margin">
+            Click your pic while you play the song. 
+        </p>
 
-    </head> 
-    <body>
-        <div class="container">
-            <div >
+        <audio controls class="margin">
+          <source src="universe.mp3" type="audio/mp3" />
+        </audio>
+        <!-- <input type="range" value="0" id="progress"> -->
+      </div>
+      <!-- <div >
                 <h1 class = "header_text">Hurrayyyy!!</h1>
                 <h1 class = "header_text">Sana wala kang pasok ng Saturday!</h1>
             </div>
             <div class="gif_container">
                 <img src="https://media0.giphy.com/media/T86i6yDyOYz7J6dPhf/giphy.gif" alt="Cute animated illustration">
-            </div>
-        </div>
+            </div> -->
+    </div>
 
-    </body> 
+    <script src="script.js"></script>
+  </body>
 </html>
